@@ -48,7 +48,7 @@ function logError(err){
 	var write	=	fs.writeFileSync('./errorLog.txt', allErrors, 'utf8');
 }
 
-//Minify resources
+//Minify resourcessss
 var htmlModulesList	=	fs.readdirSync('./public/html-modules');
 for(var i=0;i<htmlModulesList.length;i++){
 	if(htmlModulesList[i].split('.').length>1){
