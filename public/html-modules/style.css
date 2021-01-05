@@ -287,34 +287,116 @@ progress{
     transform:translate(-50%,-50%);
 }
 
-.pageHeader .pageTitle{
+.pageHeader  .pageTitle{
     text-align: center;
     color: rgb(255,255,255);
     font-weight: 300;
     font-size: 40px;
 }
 
-.placeholder{
-    width:150px;
-    height:150px;
-    background-color:rgb(255,255,255);
+.pageHeader .icon{
     margin:0 auto;
+    opacity:1;
+    -webkit-transition:all ease 0.25s;
+    -moz-transition:all ease 0.25s;
+    -ms-transition:all ease 0.25s;
+    -o-transition:all ease 0.25s;
+    transition:all ease 0.25s;
 }
 
 .pageHeader .inline{
     display:inline-block;
     vertical-align: top;
     width:200px;
+    margin:0 25px;
     text-align: center;
+}
+
+.pageHeader .inline .animBackground{
+    background-color:rgba(255,255,255,0);
+    border-radius:2px;
+    -webkit-transition:all ease 0.25s;
+    -moz-transition:all ease 0.25s;
+    -ms-transition:all ease 0.25s;
+    -o-transition:all ease 0.25s;
+    transition:all ease 0.25s;
+}
+
+
+.pageHeader .inline:hover .animBackground{
+    background-color:rgba(255,255,255,1);
 }
 
 .pageHeader .pageSubtitle{
     color:rgb(255,255,255);
-    font-weight:400;
-    font-size:22px;
+    font-weight:600;
+    font-size:24px;
     margin:0;
+    -webkit-transition:all ease 0.25s;
+    -moz-transition:all ease 0.25s;
+    -ms-transition:all ease 0.25s;
+    -o-transition:all ease 0.25s;
+    transition:all ease 0.25s;
+}
+
+.pageHeader .inline:hover .pageSubtitle{
+    color:rgb(17,97,73);
+}
+
+.pageHeader .inline .coloredIcon{
+    position:absolute;
+    top:0;
+    left:50%;
+    opacity: 0;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    transform:translateX(-50%);
+    -webkit-transition:all ease 0.25s;
+    -moz-transition:all ease 0.25s;
+    -ms-transition:all ease 0.25s;
+    -o-transition:all ease 0.25s;
+    transition:all ease 0.25s;
+}
+
+.pageHeader .inline:hover .coloredIcon{
+    opacity:1;
+}
+
+.pageHeader .inline:hover .icon{
+    opacity:0;
 }
 
 .pageHeader #header-logo{
     margin:0 auto;
+}
+
+.pageHeader .inline .moreInfo{
+    position:absolute;
+    top:100%;
+    bottom:0%;
+    left:0;
+    right:0;
+    background-color:rgb(255,255,255);
+    color:rgb(17,97,73);
+    margin-top:-1px;
+    border-radius:0px 0px 2px 2px;
+    overflow:hidden;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+.pageHeader .inline:hover .moreInfo{
+    bottom:-100%;
+}
+
+.pageHeader .inline .moreInfo .text{
+    padding-top:8px;
+    padding-left:16px;
+    padding-right:16px;
+    font-size:13px;
 }
