@@ -7,7 +7,9 @@ html{
     font-family:sans-serif;
     line-height:1.15;
     -webkit-text-size-adjust:100%;
-    -webkit-tap-highlight-color:transparent
+    -webkit-tap-highlight-color:transparent;
+    overflow-y: scroll;
+    overflow-y: overlay;
 }
 article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{
     display:block
@@ -158,6 +160,38 @@ progress{
     display:none!important
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0);
+  border-radius:3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(19,170,82);
+    background: linear-gradient(90deg, rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    border:1px solid rgba(255,255,255,0.7);
+    border-radius:3px;
+    -webkit-transition:all ease 0.2s;
+    -moz-transition:all ease 0.2s;
+    -ms-transition:all ease 0.2s;
+    -o-transition:all ease 0.2s;
+    transition:all ease 0.2s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    /*background: #555;*/
+
+    background: rgb(17,97,73);
+    background: linear-gradient(90deg, rgba(17,97,73,1) 0%, rgba(17,97,73,119,170,82,1) 100%);
+}
+
 .relative{
     position:relative;
 }
@@ -259,6 +293,7 @@ progress{
 .pageHeader{
     position:relative;
     width:100%;
+    height:100vh;
 }
 
 .pageHeader .overlay{
@@ -292,6 +327,7 @@ progress{
     color: rgb(255,255,255);
     font-weight: 300;
     font-size: 40px;
+    cursor:default;
 }
 
 .pageHeader .icon{
@@ -332,6 +368,7 @@ progress{
     font-weight:600;
     font-size:24px;
     margin:0;
+    cursor:default;
     -webkit-transition:all ease 0.25s;
     -moz-transition:all ease 0.25s;
     -ms-transition:all ease 0.25s;
@@ -396,7 +433,99 @@ progress{
 
 .pageHeader .inline .moreInfo .text{
     padding-top:8px;
-    padding-left:16px;
-    padding-right:16px;
+    padding-left:10px;
+    padding-right:10px;
     font-size:13px;
+    cursor:default;
+    border-top:1px solid rgb(255,255,255);
+    -webkit-transition:all ease 0.25s;
+    -moz-transition:all ease 0.25s;
+    -ms-transition:all ease 0.25s;
+    -o-transition:all ease 0.25s;
+    transition:all ease 0.25s;
+}
+
+.pageHeader .inline:hover .text{
+    border-top:1px solid rgb(17,97,73);
+}
+
+.pageHeader .scrollDown{
+    position:absolute;
+    z-index:15;
+    bottom:12px;
+    left:50%;
+    cursor:pointer;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    transform:translateX(-50%);
+    -webkit-transition:all ease 0.2s;
+    -moz-transition:all ease 0.2s;
+    -ms-transition:all ease 0.2s;
+    -o-transition:all ease 0.2s;
+    transition:all ease 0.2s;
+}
+
+.pageHeader .scrollDown .arrow{
+    opacity:1;
+}
+
+.pageHeader .scrollDown .arrowHover{
+    opacity:0;
+    position:absolute;
+    top:0;
+}
+
+.pageHeader .scrollDown .arrow, .pageHeader .scrollDown .arrowHover{
+    -webkit-transition:all ease 0.2s;
+    -moz-transition:all ease 0.2s;
+    -ms-transition:all ease 0.2s;
+    -o-transition:all ease 0.2s;
+    transition:all ease 0.2s;
+}
+
+.pageHeader .scrollDown:hover .arrow{
+    opacity:0;
+    transform:scale(1.2);
+}
+
+.pageHeader .scrollDown:hover .arrowHover{
+    opacity:1;
+    transform:scale(1.2);
+}
+
+.pageHeader .inline .moreInfo .moreButton{
+    font-size:15px;
+    font-weight:500;
+    margin:0 auto;
+    margin-top:5px;
+    text-align:center;
+    padding:5px 10px;
+    color:rgb(255,255,255);
+    cursor:pointer;
+    border-radius:2px;
+    width:50%;
+    background-color:rgb(17,97,73);
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+.pageHeader .inline .moreInfo .moreButton:hover{
+    background-color:rgb(19,170,82);
+}
+
+#home-header{
+    background: url(/Solver-Projekti.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#home-header #main-image{
+    display:none;
 }
