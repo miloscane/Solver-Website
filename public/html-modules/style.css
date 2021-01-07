@@ -21,7 +21,7 @@ body{
     font-size:1rem;
     font-weight:400;
     line-height:1.5;
-    color:rgb(118,118,118);
+    color:rgb(59, 103, 90);
     text-align:left;
     background-color:#fff;
 }
@@ -196,6 +196,15 @@ progress{
     position:relative;
 }
 
+.center{
+    text-align:center;
+}
+
+.centered{
+    margin-left:auto;
+    margin-right:auto;
+}
+
 
 #main-nav-wrap{
     position:fixed;
@@ -237,6 +246,7 @@ progress{
 
 #main-nav-wrap nav ul:first-child li a:first-child{
     color:rgba(255,255,255,0.9);
+    text-shadow:0px 2px 2px rgba(0,0,0,0);
     font-size:20px;
     font-weight:500;
     -webkit-transition:all ease 0.2s;
@@ -247,6 +257,7 @@ progress{
 }
 #main-nav-wrap nav ul:first-child li a:first-child:hover{
     color:rgba(255,255,255,1);
+    text-shadow:0px 2px 2px rgba(0,0,0,0.7);
 }
 
 #main-nav-wrap .background{
@@ -254,7 +265,7 @@ progress{
     z-index:5;
     top:-10px;
     left:-20px;
-    bottom:-10px;
+    bottom:-16px;
     right:110%;
     background: rgb(19,170,82);
     background: linear-gradient(90deg, rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
@@ -267,9 +278,6 @@ progress{
 
 .main-nav-wrap-colored .relative .background{
     right:-20px !important;
-}
-
-.main-nav-wrap-colored{
     -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.6) !important;
     -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.6) !important;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.6) !important;
@@ -284,6 +292,7 @@ progress{
     background-position:center center;
     z-index: 10;
     position:relative;
+    margin-top:4px;
 }
 
 #main-logo img{
@@ -528,4 +537,240 @@ progress{
 
 #home-header #main-image{
     display:none;
+}
+
+.contentWidth{
+    width:1200px;
+    margin:0 auto;
+}
+
+#home-why{
+    padding:100px 0;
+}
+
+.dualContent .textContent{
+    width:50%;
+    margin-left:-4px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.dualContent .imageContent{
+    width:50%;
+    margin-left:-4px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.dualContent .imageContent img{
+    border-radius:2px;
+}
+
+.dualContent .textContent .bigTitle{
+    font-size: 40px;
+    font-weight:500;
+    color:rgb(9, 47, 30);
+}
+
+.dualContent .textContent .titleSeparator{
+    background: rgb(19,170,82);
+    background: linear-gradient(90deg, rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    border-radius:2px;
+    width:122px;
+    height: 10px;
+    margin-bottom:10px;
+    -webkit-transform:skewX(-40deg);
+    -moz-transform:skewX(-40deg);
+    -ms-transform:skewX(-40deg);
+    -o-transform:skewX(-40deg);
+    transform:skewX(-40deg);
+
+}
+
+.dualContent .textContent .title{
+    font-size: 24px;
+    font-weight:600;
+    margin-top: 10px;
+    color:rgb(9, 47, 30);
+}
+
+#home-offer{
+    padding:100px 0;
+}
+
+.gradientBackground{
+    background: rgb(19,170,82);
+    background: linear-gradient(0deg, rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    color:rgb(255,255,255);
+    padding:20px 0;
+}
+
+.gradientBackground .bigTitle{
+    color:rgb(255,255,255);
+    font-size: 40px;
+    font-weight:500;
+}
+
+.gradientBackground .titleSeparator{
+    background: rgb(255,255,255);
+    border-radius:2px;
+    width:122px;
+    height: 10px;
+    margin-bottom:10px;
+    -webkit-transform:skewX(-40deg);
+    -moz-transform:skewX(-40deg);
+    -ms-transform:skewX(-40deg);
+    -o-transform:skewX(-40deg);
+    transform:skewX(-40deg);
+}
+
+#home-offer .inlineWrap{
+    text-align:center;
+}
+
+#home-offer .bigTitle{
+    margin-bottom:15px;
+}
+
+#home-offer .inline{
+    display:inline-block;
+    vertical-align: top;
+    width:300px;
+    text-align:center;
+    margin:15px 0px;
+    margin-right:60px;
+}
+
+#home-offer .inline:nth-child(4){
+    margin-left:-30px;
+    margin-top:60px;
+}
+
+#home-offer .inlinebellow{
+    margin-top:60px;
+}
+
+#home-offer .inline .title{
+    font-size:35px;
+    font-weight:300;
+    margin-bottom:5px;
+    width:100%;
+    -webkit-transform:skewX(-10deg);
+    -moz-transform:skewX(-10deg);
+    -ms-transform:skewX(-10deg);
+    -o-transform:skewX(-10deg);
+    transform:skewX(-10deg);
+    text-align: left;
+    margin-left: 30px;
+}
+
+#home-offer .inline .textBox{
+    position:relative;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:5px;
+}
+
+#home-offer .inline .textBox .background{
+    background-color:rgb(255,255,255);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:10;
+    border-radius:2px;
+    -webkit-transform:skewX(-10deg);
+    -moz-transform:skewX(-10deg);
+    -ms-transform:skewX(-10deg);
+    -o-transform:skewX(-10deg);
+    transform:skewX(-10deg);
+}
+
+#home-offer .inline .textBox .text{
+    position:relative;
+    z-index:20;
+    color:rgb(59, 103, 90);
+    text-align:left;
+    -webkit-transform:skewX(-10deg);
+    -moz-transform:skewX(-10deg);
+    -ms-transform:skewX(-10deg);
+    -o-transform:skewX(-10deg);
+    transform:skewX(-10deg);
+}
+
+#home-offer .inline .textBox .moreButton{
+    font-weight:500;
+    margin-top:10px;
+    text-align:center;
+    padding:5px 10px;
+    color:rgb(255,255,255);
+    cursor:pointer;
+    border-radius:2px;
+    width:100px;
+    margin-left:-17px;
+    position:relative;
+    z-index:15;
+    background-color:rgb(17,97,73);
+    -webkit-transform:skewX(-10deg);
+    -moz-transform:skewX(-10deg);
+    -ms-transform:skewX(-10deg);
+    -o-transform:skewX(-10deg);
+    transform:skewX(-10deg);
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+
+#home-offer .inline .textBox .moreButton:hover{
+    background-color:rgb(19,170,82);
+}
+
+#home-offer .inline .textBox .icon{
+    position:absolute;
+    right:20px;
+    bottom:5px;
+    z-index:20;
+    width:50px;
+}
+
+#home-about{
+    padding:100px 0;
+}
+
+#home-about .titleSeparator{
+    width:155px;
+}
+
+#home-about .quote{
+    font-style:italic;
+    font-weight:400;
+    color:rgb(19,170,82);
+
+}
+
+#home-about .quote p{
+    margin-bottom:0px;
+}
+
+#home-about .quote .quoteMark{
+    color:rgb(9, 47, 30);
+    font-weight:700;
+}
+
+#home-about .quote .signature{
+    text-align: right;
+    font-weight:700;
+    font-style:normal;
+    color:rgb(17,97,73);
+}
+
+#home-about .quote .signature .role{
+    font-weight:400;
+    font-style:italic;
+    color:rgb(19,170,82);
 }
