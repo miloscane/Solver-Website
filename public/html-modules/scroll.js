@@ -9,3 +9,7 @@ function scroll() {
     	mainNav.classList.remove("main-nav-wrap-colored");
 	}
 }
+
+function scrollToElem(elem,offset){
+	elem.getElementsByClassName('scrollAnchor')[0].scrollIntoView({ behavior: 'smooth',block:'start',inline:'start'});
+}

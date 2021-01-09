@@ -26,8 +26,6 @@ body{
     background-color:#fff;
 }
 
-body, html { overflow-x:hidden; }
-
 [tabindex="-1"]:focus{
     outline:0!important
 }
@@ -208,6 +206,11 @@ progress{
     margin-right:auto;
 }
 
+
+.scrollAnchor{
+    position: absolute;
+    top:-47px;
+}
 
 #main-nav-wrap{
     position:fixed;
@@ -418,6 +421,12 @@ progress{
 
 #main-logo img{
     opacity:0;
+}
+
+.copyrightWrap{
+    background: rgb(19,170,82);
+    background: linear-gradient(0deg , rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    color:rgb(255,255,255);
 }
 
 .pageHeader{
