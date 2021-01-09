@@ -427,6 +427,22 @@ progress{
     background: rgb(19,170,82);
     background: linear-gradient(0deg , rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
     color:rgb(255,255,255);
+    padding:10px;
+    text-align:left;
+    position:relative;
+}
+.copyrightWrap .logoWrap{
+    padding:10px 20px;
+}
+
+.copyrightWrap .copyright{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align:center;
+    line-height:58px;
 }
 
 .pageHeader{
@@ -1048,6 +1064,22 @@ progress{
 
     #main-nav-wrap nav ul:first-child .separator{
         display:block;
+    }
+
+    .copyrightWrap{
+        text-align:center;
+    }
+
+    .copyrightWrap .logoWrap img{
+        margin:0 auto; 
+    }
+
+    .copyrightWrap .copyright{
+        position:relative;
+        display:block;
+        line-height:normal;
+        margin-top: 10px;
+        padding-bottom:10px;
     }
 
     .pageHeader .pageTitle{
