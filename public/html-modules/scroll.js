@@ -1,7 +1,5 @@
 window.onscroll = function() {scroll()};
 
-scroll();
-
 function scroll() {
 	//Main navigation
 	var mainNav	=	document.getElementById("main-nav-wrap");
