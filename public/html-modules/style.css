@@ -415,7 +415,8 @@ progress{
 #main-logo{
     display:inline-block;
     vertical-align: middle;
-    background-image:url('/solver-website-logo-white.png');
+    background-image:url('/solver-white-website-logo.svg');
+    background-size:150px;
     background-repeat: no-repeat;
     background-position:left center;
     z-index: 10;
@@ -438,8 +439,13 @@ progress{
     text-align:left;
     position:relative;
 }
+
 .copyrightWrap .logoWrap{
     padding:10px 20px;
+}
+
+.copyrightWrap .logoWrap img{
+    width:150px;
 }
 
 .copyrightWrap .copyright{
