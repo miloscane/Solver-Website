@@ -6,10 +6,12 @@ function scroll() {
 	if (window.pageYOffset > 0) {
 		mainNav.classList.add("main-nav-wrap-colored");
  	}else{
-    	mainNav.classList.remove("main-nav-wrap-colored");
+    	if(!document.getElementById("main-menu").classList.contains("opened")){
+    		mainNav.classList.remove("main-nav-wrap-colored");
+    	}
 	}
 }
 
-function scrollToElem(elem,offset){
+function scrollToElem(elem){
 	elem.getElementsByClassName('scrollAnchor')[0].scrollIntoView({ behavior: 'smooth',block:'start',inline:'start'});
 }

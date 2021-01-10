@@ -187,8 +187,6 @@ progress{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    /*background: #555;*/
-
     background: rgb(17,97,73);
     background: linear-gradient(90deg, rgba(17,97,73,1) 0%, rgba(17,97,73,119,170,82,1) 100%);
 }
@@ -235,7 +233,8 @@ progress{
     position:relative;
     display:inline-block;
     vertical-align: middle;
-    float:right;
+    width:70%;
+    margin-left:-4px;
     -webkit-transition:all ease 0.5s;
     -moz-transition:all ease 0.5s;
     -ms-transition:all ease 0.5s;
@@ -288,12 +287,16 @@ progress{
 
 #main-nav-wrap .opened{
     right:-20px;
+    width:200px;
 }
 
 #responsive-menu-opener{
     display:none;
-    float:right;
+    width:50%;
+    margin-left:-4px;
+    text-align:right;
     position:relative;
+    vertical-align: middle;
     z-index:50;
     margin-top:2px;
 }
@@ -302,6 +305,8 @@ progress{
 #responsive-menu-opener .relative{
     width:38px;
     height:28px;
+    margin-left:auto;
+    margin-right:0;
 }
 
 #responsive-menu-opener .arrow{
@@ -389,8 +394,8 @@ progress{
     z-index:5;
     top:-10px;
     left:-20px;
-    bottom:-16px;
-    right:110%;
+    bottom:-10px;
+    right:120%;
     background: rgb(19,170,82);
     background: linear-gradient(90deg, rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
     -webkit-transition:all ease 0.5s;
@@ -412,11 +417,13 @@ progress{
     vertical-align: middle;
     background-image:url('/solver-website-logo-white.png');
     background-repeat: no-repeat;
-    background-size:100%;
-    background-position:center center;
+    background-position:left center;
     z-index: 10;
     position:relative;
-    margin-top:4px;
+    width:30%;
+    text-align:left;
+    vertical-align: middle;
+    margin-right:-4px;
 }
 
 #main-logo img{
@@ -425,7 +432,7 @@ progress{
 
 .copyrightWrap{
     background: rgb(19,170,82);
-    background: linear-gradient(0deg , rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    background: linear-gradient(90deg , rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
     color:rgb(255,255,255);
     padding:10px;
     text-align:left;
@@ -443,6 +450,10 @@ progress{
     bottom:0;
     text-align:center;
     line-height:58px;
+}
+
+.copyrightWrap .copyrightResponsive{
+    display:none;
 }
 
 .pageHeader{
@@ -545,6 +556,12 @@ progress{
     transition:all ease 0.25s;
 }
 
+
+.pageHeader .pageSubtitle span{
+    margin-left:-100%;
+    margin-right:-100%;
+}
+
 .pageHeader .inline:hover .pageSubtitle{
     color:rgb(17,97,73);
 }
@@ -597,7 +614,7 @@ progress{
 }
 
 .pageHeader .inline:hover .moreInfo{
-    bottom:-100%;
+    bottom:-120%;
 }
 
 .pageHeader .inline .moreInfo .text{
@@ -668,7 +685,7 @@ progress{
     font-size:15px;
     font-weight:500;
     margin:0 auto;
-    margin-top:5px;
+    margin-top:15px;
     text-align:center;
     padding:5px 10px;
     color:rgb(255,255,255);
@@ -712,18 +729,23 @@ progress{
     width:50%;
     margin-left:-4px;
     display:inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+    padding:0px 10px;
 }
 
 .dualContent .imageContent{
     width:50%;
     margin-left:-4px;
     display:inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .dualContent .imageContent img{
     border-radius:2px;
+}
+
+.dualContent .imageContent .verticalStretch{
+    display:none;
 }
 
 .dualContent .textContent .bigTitle{
@@ -803,11 +825,10 @@ progress{
 
 #home-offer .inline:nth-child(4){
     margin-left:-30px;
-    margin-top:60px;
 }
 
 #home-offer .inlinebellow{
-    margin-top:60px;
+    margin-top:40px;
 }
 
 #home-offer .inline .title{
@@ -827,9 +848,10 @@ progress{
 #home-offer .inline .textBox{
     position:relative;
     padding-top:10px;
-    padding-bottom:10px;
+    padding-bottom:45px;
     padding-left:20px;
     padding-right:5px;
+    height:230px;
 }
 
 #home-offer .inline .textBox .background{
@@ -862,15 +884,15 @@ progress{
 
 #home-offer .inline .textBox .moreButton{
     font-weight:500;
-    margin-top:10px;
     text-align:center;
     padding:5px 10px;
     color:rgb(255,255,255);
     cursor:pointer;
     border-radius:2px;
     width:100px;
-    margin-left:-17px;
-    position:relative;
+    position:absolute;
+    bottom:12px;
+    left:-2px;
     z-index:15;
     background-color:rgb(17,97,73);
     -webkit-transform:skewX(-10deg);
@@ -975,10 +997,6 @@ progress{
         padding-right:20px;
     }
 
-    #home-offer .inline{
-        width:25%;
-    }
-
     .pageHeader #header-logo{display: none}
 
     .pageHeader .pageTitle {
@@ -1011,6 +1029,21 @@ progress{
     #home-offer{
         padding:50px 0;
     }
+
+
+    #home-offer .inline{
+        width:25%;
+    }
+
+    #home-offer .inline .textBox{
+        height:auto;
+        padding-bottom:70px;
+    }
+
+
+    #home-about .textContent{
+        padding-left:20px;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1032,6 +1065,10 @@ progress{
     #main-nav-wrap .background{
         background: rgb(19,170,82);
         background: linear-gradient(0deg, rgba(17,97,73,1) 0%, rgba(19,170,82,1) 100%);
+    }
+
+    #main-logo{
+        width:50%;
     }
 
     #main-nav-wrap nav{
@@ -1070,6 +1107,10 @@ progress{
         text-align:center;
     }
 
+    .copyrightWrap{
+        background: linear-gradient(0deg , rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    }
+
     .copyrightWrap .logoWrap img{
         margin:0 auto; 
     }
@@ -1084,6 +1125,15 @@ progress{
 
     .pageHeader .pageTitle{
         font-size:40px;
+    }
+
+
+    .dualContent .imageContent .verticalStretch{
+        display:block;
+    }
+
+    .dualContent .imageContent .box{
+        display:none;
     }
 
 
@@ -1125,6 +1175,27 @@ progress{
     
 }
 
+@media only screen and (max-width: 650px) {
+    .dualContent .textContent, .dualContent .imageContent{
+        width:100%;
+        padding:10px 0 !important;
+        margin:0 !important;
+    } 
+
+
+    .dualContent .imageContent .verticalStretch{
+        display:none;
+    }
+
+    .dualContent .imageContent .box{
+        display:block;
+    }
+
+    .dualContent .imageContent img{
+        margin:0 auto;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .pageHeader .pageTitle {
         font-weight:500;
@@ -1144,6 +1215,14 @@ progress{
         margin-bottom:-10px;
     }
 
+    .copyrightWrap .copyrightResponsive{
+        display:block;
+    }
+
+    .copyrightWrap .copyright{
+        display:none;
+    }
+
     #home-offer .inline{
         width: 80%;
         display: block;
@@ -1161,8 +1240,5 @@ progress{
 }
 
 @media only screen and (max-width: 500px) {
-    .dualContent .textContent, .dualContent .imageContent{
-        width:100%;
-        padding:20px 0;
-    }
+    
 }
