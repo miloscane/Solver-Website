@@ -727,6 +727,10 @@ progress{
     margin:0 auto;
 }
 
+.paddedTopBottom{
+    padding:50px 0;
+}
+
 #home-why{
     padding:100px 0;
 }
@@ -963,9 +967,182 @@ progress{
     color:rgb(19,170,82);
 }
 
+.pageTitleImage{
+    margin-bottom:50px;
+    margin-top:50px;
+}
+
+.pageTitleImage img{
+    margin:0 auto;
+}
+
+.pageHeaderFluent{
+    padding:50px 20px;
+    background: rgb(19,170,82);
+    background: linear-gradient(90deg, rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    text-align:center;
+}
+
+.pageHeaderFluent .inline{
+    width:175px;
+    display:inline-block;
+    position:relative;
+    margin:0 1.5%;
+    border-radius:2px;
+    background-color:rgba(255,255,255,0);
+    vertical-align: top;
+    cursor:pointer;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+.pageHeaderFluent .inline .icon{
+    margin: 0 auto;
+    opacity:1;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+
+}
+
+.pageHeaderFluent .inline .coloredIcon{
+    position:absolute;
+    top:0;
+    left:50%;
+    opacity:0;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    transform:translateX(-50%);
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+.pageHeaderFluent .inline .title{
+    font-size:24px;
+    font-weight:600;
+    color:rgb(255,255,255);
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
 
 
 
+.pageHeaderFluent .inline .moreButton{
+    font-size:15px;
+    font-weight:500;
+    margin:0 auto;
+    margin-top:5px;
+    text-align:center;
+    padding:5px 10px;
+    opacity:0;
+    color:rgb(255,255,255);
+    cursor:pointer;
+    border-radius:2px;
+    width:50%;
+    margin-bottom:10px;
+    background-color:rgb(17,97,73);
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+
+.pageHeaderFluent .inline .moreButton:hover{
+    background-color:rgb(19,170,82);
+}
+
+
+
+.pageHeaderFluent .inline:hover{
+    background-color:rgba(255,255,255,1);
+}
+
+.pageHeaderFluent .inline:hover .coloredIcon{
+    opacity:1;
+}
+
+.pageHeaderFluent .inline:hover .icon{
+    opacity:0;
+}
+
+.pageHeaderFluent .inline:hover .title{
+    color:rgb(17,97,73);
+}
+
+.pageHeaderFluent .inline:hover .moreButton{
+    opacity:1;
+}
+
+.bigSection .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color:rgb(9, 47, 30);
+}
+
+.bigSection .separator{
+    background: rgb(19,170,82);
+    background: linear-gradient(90deg, rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    border-radius: 2px;
+    width: 122px;
+    height: 10px;
+    -webkit-transform: skewX(-40deg);
+    -moz-transform: skewX(-40deg);
+    -ms-transform: skewX(-40deg);
+    -o-transform: skewX(-40deg);
+    transform: skewX(-40deg);
+    margin:15px auto;
+    margin-bottom:20px;
+}
+
+.bigSection .text{
+    text-align:center;
+    color:rgb(9, 47, 30);
+    width:800px;
+    margin:0 auto;
+}
+
+.bigSection .text p{
+    margin-bottom: 15px;
+    margin-top:0px; 
+}
+
+
+.greenTitle{
+    background: rgb(19,170,82);
+    background: linear-gradient(0deg, rgba(19,170,82,1) 0%, rgba(17,97,73,1) 100%);
+    text-align:center;
+    padding:10px;
+    padding-bottom:20px;
+}
+
+.greenTitle img{
+    margin:0 auto;
+}
+
+.greenTitle .icon{
+    height:50px;
+    margin-bottom:5px;
+}
 
 
 
@@ -1050,6 +1227,7 @@ progress{
     #home-about .textContent{
         padding-left:20px;
     }
+
 }
 
 @media only screen and (max-width: 1100px) {
