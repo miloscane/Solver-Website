@@ -94,6 +94,11 @@ server.get('/:pageName',function(req,res){
 	});
 });
 
+server.get('/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.send("User-agent: *\nDisallow: /");
+});
+
 server.get('*',function(req,res){
 	res.redirect('/');
 });
