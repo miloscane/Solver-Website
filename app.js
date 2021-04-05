@@ -87,7 +87,6 @@ server.get('/',function(req,res){
 	});
 });
 
-
 server.get('/:pageName',function(req,res){
 	res.render(req.params.pageName,{
 		pageInfo: fetchPageInfo(req.params.pageName,'')
